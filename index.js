@@ -435,7 +435,7 @@ function addincart(){
 }
 
 function addfromshow(){
-    if(p1.src === 'http://127.0.0.1:5500/white.png'){
+    if(p1.src === 'https://yassine24talbi.github.io/stor/white.png'){
         let priceshowadd = 509;
         priceofone = priceshowadd
         let loved = [
@@ -457,7 +457,7 @@ function addfromshow(){
         totalinput.innerHTML = `${totalofyou} DH`;
         countcart.innerHTML = productincart.length;
     }
-    else if(p1.src === 'http://127.0.0.1:5500/black.png'){
+    else if(p1.src === 'https://yassine24talbi.github.io/stor/black.png'){
         let priceshowadd = 499;
         priceofone = priceshowadd
         let loved = [
@@ -479,7 +479,7 @@ function addfromshow(){
         totalinput.innerHTML = `${totalofyou} DH`;
         countcart.innerHTML = productincart.length;
     }
-    else if(p1.src === 'http://127.0.0.1:5500/yellow.png'){
+    else if(p1.src === 'https://yassine24talbi.github.io/stor/yellow.png'){
         let priceshowadd = 479;
         priceofone = priceshowadd
         let loved = [
@@ -501,7 +501,7 @@ function addfromshow(){
         totalinput.innerHTML = `${totalofyou} DH`;
         countcart.innerHTML = productincart.length;
     }
-    else if(p1.src === 'http://127.0.0.1:5500/green.png'){
+    else if(p1.src === 'https://yassine24talbi.github.io/stor/green.png'){
         let priceshowadd = 449;
         priceofone = priceshowadd
         let loved = [
@@ -523,7 +523,7 @@ function addfromshow(){
         totalinput.innerHTML = `${totalofyou} DH`;
         countcart.innerHTML = productincart.length;
     }
-    else if(p1.src === 'http://127.0.0.1:5500/red.png'){
+    else if(p1.src === 'https://yassine24talbi.github.io/stor/red.png'){
         let priceshowadd = 419;
         priceofone = priceshowadd
         let loved = [
