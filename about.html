@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="index.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <script type="module" src="https://unpkg.com/@splinetool/viewer@1.2.4/build/spline-viewer.js"></script>
+    <link rel="icon" href="iconme.png">
+    <title>3D Web</title>
+</head>
+<body id="body">
+    <h1 class="sonn">Sonn</h1>
+    <i id="i" class='bx bxs-balloon' onclick="darkmode()"></i>
+    <div class="one" id="div" onclick="change()" >
+        <spline-viewer style="scale: 2;" url="https://prod.spline.design/24mnwpu3S5RhyKh9/scene.splinecode"></spline-viewer>
+    </div>
+
+    <div class="conteniar" id="conteniar">
+        <div class="nav-bar">
+            <div class="logo" id="post"><span id="ant-post">Y</span>ASSINE</div>
+            <ul class="nav-list">
+                <li><a id="post" href="index.html">Home</a></li>
+                <li>|</li>
+                <li><a id="post" href="products.html">Shop</a></li>
+                <li>|</li>
+                <li><a id="post" href="about.html">About Us</a></li>
+            </ul>
+        </div>
+
+        <div class="introabout">
+            <h1 class="abouttitle">Yassine Talbi
+                <span>Hello I'm 20 year , I learned by my self HTML , CSS and JAVASCRIPT in less then 4 moins , and Im looking for be the best devoloper for 2027, and that project is my first complytli projict in front-end .</span>
+                <div>
+                    <a href="https://www.instagram.com/yassine_ta20/" target="_blank"><i class='bx bxl-instagram'></i></a>
+                    <a href="https://www.facebook.com/yassine.talbi.779?mibextid=ZbWKwL" target="_blank"><i class='bx bxl-facebook'></i></a>
+                    <a href="https://wa.me/0693208317" target="_blank"><i class='bx bxl-whatsapp'></i></a>
+                    <a href="https://discord.com/channels/@me" target="_blank"><i class='bx bxl-discord-alt'></i></a>
+                </div>
+            </h1>
+            <div class="myimage"><img src="me.png" alt="photo"></div>
+        </div>
+
+    </div>
+
+
+
+
+
+
+    <div class="cart" id="cart" style="display: none;">
+        <i id="open" class='bx bx-cart' onclick="Cart('1','0','1','all','none','all','300px')"><span id="countcart">0</span></i>
+        <i id="close" class='bx bx-chevron-right' onclick="Cart('0','1','0','none','all','none','80px')"></i>
+        <h1 id="cart-title">Cart</h1>
+        <div id="your-product">
+            <div id="carttext" style="font-size: 32px;">Your Cart Is Impty !</div>
+        </div>
+        <div class="total" id="total-output">
+            <h1 id="title-totla">total</h1>
+            <span id="totalinput">0 DH</span>
+            <button class="checkout" id="checkout" onclick="checkout()">CheckOut</button>
+            <button class="checkout" id="makeit">Make Order</button>
+        </div>
+                    <!-- after checkout -->
+
+        <div id="therInfo">
+            <i class='bx bx-x' onclick="backstor()"></i>
+            <input id="full" type="text">
+            <label id="fulllab" for="Name" >Full Name*</label>
+            <input id="city" type="text">
+            <label id="citylab" for="city" >city*</label>
+            <input id="address" type="text">
+            <label id="addresslab" for="Address" >Address*</label>
+            <input id="phone" type="number">
+            <label id="phonelab" for="Phone">Phone Number*</label>
+        </div>
+    </div>
+        <script src="index.js"></script>
+    </body>
+    </html>
