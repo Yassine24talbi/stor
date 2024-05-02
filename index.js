@@ -13,6 +13,11 @@ let yourProduct = document.getElementById('your-product');
 let elopen = document.getElementById('open');
 let elclose = document.getElementById('close');
 let titletotal = document.getElementById('title-totla');
+console.log(window.location.href)
+const link = window.location.href;
+const linkindex= link.indexOf('products')
+console.log(link.replace('products','black.png'))
+
 if(localStorage.mood != null){
 dark = parseInt(parent.localStorage.mood)
 }else{
@@ -205,8 +210,7 @@ function pickit() {
         someplace.style.opacity = '1';
         size.style.display = 'grid';
         closeplace.style.opacity = '1';
-    }, 500);
-    correctwidth();
+    }, 500);   
 }
 
 function correctwidth() {
@@ -225,7 +229,7 @@ function correctwidth() {
         size.style.transform = 'translateX(-50%)';
     }
 }
-
+correctwidth();
 
 function closefid(){
     leftclick.style.opacity = '1'
@@ -435,7 +439,7 @@ function addincart(){
 }
 
 function addfromshow(){
-    if(p1.src === 'https://yassine24talbi.github.io/stor/white.png'){
+    if(p1.src === link.replace('products','white.png')){
         let priceshowadd = 509;
         priceofone = priceshowadd
         let loved = [
@@ -457,7 +461,7 @@ function addfromshow(){
         totalinput.innerHTML = `${totalofyou} DH`;
         countcart.innerHTML = productincart.length;
     }
-    else if(p1.src === 'https://yassine24talbi.github.io/stor/black.png'){
+    else if(p1.src === link.replace('products','black.png')){
         let priceshowadd = 499;
         priceofone = priceshowadd
         let loved = [
@@ -479,7 +483,7 @@ function addfromshow(){
         totalinput.innerHTML = `${totalofyou} DH`;
         countcart.innerHTML = productincart.length;
     }
-    else if(p1.src === 'https://yassine24talbi.github.io/stor/yellow.png'){
+    else if(p1.src === link.replace('products','yellow.png')){
         let priceshowadd = 479;
         priceofone = priceshowadd
         let loved = [
@@ -501,7 +505,7 @@ function addfromshow(){
         totalinput.innerHTML = `${totalofyou} DH`;
         countcart.innerHTML = productincart.length;
     }
-    else if(p1.src === 'https://yassine24talbi.github.io/stor/green.png'){
+    else if(p1.src === link.replace('products','green.png')){
         let priceshowadd = 449;
         priceofone = priceshowadd
         let loved = [
@@ -523,7 +527,7 @@ function addfromshow(){
         totalinput.innerHTML = `${totalofyou} DH`;
         countcart.innerHTML = productincart.length;
     }
-    else if(p1.src === 'https://yassine24talbi.github.io/stor/red.png'){
+    else if(p1.src === link.replace('products','red.png')){
         let priceshowadd = 419;
         priceofone = priceshowadd
         let loved = [
